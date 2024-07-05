@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Welcome to the State of New York!</title>
+</head>
+<body>
+    <!--Nav element-->
+    <!--Unordered list-->
+    <nav>
+        <ul>
+            <li><a href="Albany.html">Albany</a></li>
+            <li><a href="Buffalo.html">Buffalo</a></li>
+            <li><a href="NYC.html">NYC</a></li>
+            <li><a href="form.html">Form</a></li>
+            <!-- Add more links to other pages as needed -->
+        </ul>
+        
+    </nav>
+    <h1>Welcome!</h1>
+    <h2 style="text-align: center;">New York at a Glancce</h2>
+    <!--Section element-->
+    <section>
+
+        <!-- Task ordered - List -->
+
+    <ol>
+        <li>New York's population is ~19.68 million people (2022)</li>
+        <li>New York become a state in 1788</li>
+        <li>New York is located on the East Coast of the United States</li>
+        <li>New York is home to urban, rural, and suburban cities.</li>
+        <li>The average income for the state of New York is ~$40,000 dollars, which is higher than the National average income of $37,585</li>
+    </ol>
+    </section>
+    <h3 style="text-align: center;">A breif History</h3>
+    <section>
+        <p>New York, one of the original 13 colonies, was founded in 1624 and originally called New Amsterdam by the Dutch settlers. It played a pivotal role in the early history of the United States, serving as a major port for trade and immigration. In 1664, the English seized control of the area and renamed it New York after the Duke of York. The state was a battleground for several significant battles during the American Revolution, leading to its nickname, the "Empire State." New York ratified the U.S. Constitution in 1788, becoming the 11th state to join the Union. Throughout the 19th and 20th centuries, New York emerged as a center for commerce, culture, and immigration, symbolized by the iconic Statue of Liberty. The construction of the Erie Canal in the early 19th century was a monumental engineering feat that significantly contributed to the economic growth of New York and the entire country. Today, New York is known for its diverse population, significant cultural institutions, and as the financial capital of the world.</p>
+    </section>
+    <h1 id="Top">New York State</h1>
+    <div class="image-text-container">
+        <img src="/Images/NysSeal.jpg" alt="New York State Seal" class="center-img">
+    </div>
+    <!--Aside element-->
+    <aside class="sidebar">
+        <!--Header element-->
+        <header>
+        <h3>For more information</h3>
+        <p>For more information, visit <a href="https://en.wikipedia.org/wiki/New_York_(state)" target="_blank">New York State</a></p>
+    </header>
+    </aside>
+</header>
+<div>
+    <!--Table element-->
+    <table>
+        <tr>
+            <td><strong>Name</strong></td>
+            <td><strong>Phone</strong></td>
+            <td><strong>Ext</strong></td>
+            <td><strong>Email</strong></td>
+        </tr>
+        <tr>
+            <td><strong>Pat C.</strong></td>
+            <td><strong>555-555-5555</strong></td>
+            <td><strong>123</strong></td>
+            <td><strong>pcall13@wgu.edu</strong></td>
+        </tr>
+        <tr>
+            <td><strong>Walt C.</strong></td>
+            <td><strong>123-456-7890</strong></td>
+            <td><strong>456</strong></td>
+            <td><strong>walt@aol.com</strong></td>
+        </tr>
+    </table>
+    <h3>Employees (Listed above)</h3>
+</div>
+
+<div>
+    
+    <section>
+<h2>Want to hear from us?</h2>
+<form action="/submit-form-endpoint" method="post" class="form-input" id="myForm">
+    <div>
+        <label for="name">First:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+    </div>
+    <div>
+        <label for="Last-name">Last:</label>
+        <input type="tel" id="Last-name" name="phone" required placeholder="Enter your last name">
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="verify-email" name="email" required placeholder="Verify Your Email">
+
+    </div>
+    <div>
+        <input type="submit" value="Submit">
+    </div>
+</form>
+<script>
+    document.getElementById('myForm').addEventListener('submit', function(event) {
+        var email = document.getElementById('email').value;
+        var verifyEmail = document.getElementById('verify-email').value;
+
+        if (email !== verifyEmail) {
+            alert('The email addresses do not match. Please try again.');
+            event.preventDefault(); // Prevent form submission
+        }
+    });
+</script>
+</section>
+</div>
+    
+</body>
+</html>
